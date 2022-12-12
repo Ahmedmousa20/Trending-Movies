@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TrendingService } from '../trending.service';
-import { NgxSpinnerService } from "ngx-spinner";
+
 
 @Component({
   selector: 'app-home',
@@ -10,7 +10,7 @@ import { NgxSpinnerService } from "ngx-spinner";
 export class HomeComponent implements OnInit {
 
 
-  constructor(private _TrendingService:TrendingService , private spinner: NgxSpinnerService) { }
+  constructor(private _TrendingService:TrendingService ) { }
 
   trendingMovies:any[]=[];
   trendingTvshows:any[]=[];
