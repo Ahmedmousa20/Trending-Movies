@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            <img class="w-100 mb-3" src="https://image.tmdb.org/t/p/original/{{itemDetails.poster_path}}" >
+        </div>
+    </div>
+    <div class="col-md-8">
+
+        <div>
+            <h2>{{itemDetails.title}}{{itemDetails.name}}</h2>
+            <h6>{{itemDetails.tagline}}</h6>
+            <button *ngFor="let gen of itemDetails.genres" class="btn btn-primary m-2">{{gen.name}}</button>
+            <div>
+                <h6>Vote Average : {{itemDetails.vote_average}}</h6>
+                <h6>Vote Count : {{itemDetails.vote_count}}</h6>
+                <h6>Popularity : {{itemDetails.popularity}}</h6>
+                <h6>Release Date : {{itemDetails.release_date}}</h6>
+                <h6>{{itemDetails.overview}}</h6>
+            </div>
+        </div>
+
+    </div>
+</div>
